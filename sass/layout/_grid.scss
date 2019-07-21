@@ -1,0 +1,140 @@
+/*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 170px 150px auto;
+        grid-template-areas: "header""left""footer""right";
+
+        header {
+            grid-area: header;
+            background-color: pink;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: pink;
+        }
+
+        #left {
+            grid-area: left;
+            background-color: blue;
+        }
+
+        #right {
+            grid-area: right;
+            background-color: orange;
+        }
+    }
+
+}
+
+/*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 170px 150px auto;
+        grid-template-areas: "header""left""footer""right";
+
+        header {
+            grid-area: header;
+            background-color: pink;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: pink;
+        }
+
+        #left {
+            grid-area: left;
+            background-color: blue;
+        }
+
+        #right {
+            grid-area: right;
+            background-color: orange;
+        }
+    }
+}
+
+/*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 170px 150px auto;
+        grid-template-areas: "header""left""footer""right";
+
+        header {
+            grid-area: header;
+            background-color: pink;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: pink;
+        }
+
+        #left {
+            grid-area: left;
+            background-color: blue;
+        }
+
+        #right {
+            grid-area: right;
+            background-color: orange;
+        }
+    }
+}
+
+/*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/*=================DESKTOP===================*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 172px 1fr 2fr 172px;
+        grid-template-rows: 100vh;
+        grid-template-areas: "header left right footer";
+
+        header {
+            grid-area: header;
+            p {
+                position: fixed;
+            }
+        }
+
+        footer {
+            grid-area: footer;
+            p {
+                position: fixed;
+            }
+        }
+
+        #left {
+            grid-area: left;
+            background-color: blue;
+        }
+
+        #right {
+            grid-area: right;
+            background-color: orange;
+        }
+    }
+
+}
+
+/*=================DESKTOP HI-RES===================*/
+@media (min-width: 1281px) {}

@@ -1,0 +1,33 @@
+//Hamburger Nav Gradient
+@mixin gradient($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);  
+  }
+
+  /*Flexbox*/
+@mixin flex($flow, $jcontent, $acontent) {
+  display: flex;
+  flex-fow: $flow;
+  justify-content: $jcontent;
+  align-content: $acontent;
+}
+
+/* Link colors */
+@mixin links($color, $vcolor, $hcolor, $acolor) {
+  color: $color;
+
+  &:visited {
+    color: $vcolor;
+  }
+
+  &:hover {
+    color: $hcolor;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $acolor;
+  }
+}
