@@ -3,10 +3,7 @@
   body {
     header {
 
-      #desklogo {
-        display: none;
-      }
-
+      #desklogo,
       #desknav {
         display: none;
       }
@@ -27,6 +24,7 @@
           .top-nav-item {
             padding-top: 30px !important;
           }
+
           .nav-item {
             padding: 12px 0;
           }
@@ -59,18 +57,17 @@
 
 /*==============MOBILE LANDSCAPE==============*/
 @media (min-width: 481px) and (max-width: 767px) {
-  #desklogo {
-    display: none;
-  }
 
+  #desklogo,
   #desknav {
     display: none;
   }
+
   #mobnav {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(255, 255, 255, 1) !important;
 
     #moblogo {
       height: 50px;
@@ -79,6 +76,10 @@
     }
 
     .navbar-nav {
+      .top-nav-item {
+        padding-top: 30px !important;
+      }
+
       .nav-item {
         padding: 12px 0;
       }
@@ -109,18 +110,17 @@
 
 /*==============TABLET PORTRAIT==============*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  #desklogo {
-    display: none;
-  }
 
+  #desklogo,
   #desknav {
     display: none;
   }
+
   #mobnav {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(255, 255, 255, 1) !important;
 
     #moblogo {
       height: 50px;
@@ -129,6 +129,10 @@
     }
 
     .navbar-nav {
+      .top-nav-item {
+        padding-top: 30px !important;
+      }
+
       .nav-item {
         padding: 12px 0;
       }
@@ -158,6 +162,62 @@
 }
 
 /*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  header {
+
+    #mobnav {
+      display: none;
+    }
+
+    height: 100vh;
+    width: 100px;
+    position: fixed;
+
+    #desklogo {
+      display: flex;
+      width: 100%;
+      margin: 20px auto 50px auto;
+
+      img {
+        width: 60px;
+        margin: 0 auto;
+      }
+    }
+
+    .spacing {
+      width: 100px;
+    }
+
+    #desknav {
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      ul {
+        padding: 0;
+        align-self: center;
+        list-style: none;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(-180deg);
+
+        li {
+          display: inline-block;
+          margin-bottom: 25px;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+
+          a {
+            @include links($nav, $nav, $nav_hover, $darkpink);
+          }
+        }
+      }
+    }
+  }
+}
+
 
 /*=================DESKTOP===================*/
 @media (min-width: 1025px) and (max-width: 3000px) {

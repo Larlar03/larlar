@@ -1,5 +1,4 @@
 /*==============MOBILE PORTRAIT==============*/
-/*==============MOBILE PORTRAIT==============*/
 @media (min-width: 320px) and (max-width: 480px) {
   footer {
     @include flex(column nowrap, center, center);
@@ -28,16 +27,86 @@
 
 /*==============MOBILE LANDSCAPE==============*/
 @media (min-width: 481px) and (max-width: 767px) {
+  footer {
+    @include flex(column nowrap, center, center);
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
 
+      li {
+        display: inline-block;
+        font-size: 1.3rem;
+        letter-spacing: 20px;
+
+        .fas,
+        .fab {
+          @include links($nav, $nav, $nav_hover, $nav);
+          color: $beige;
+        }
+      }
+    }
+  }
 }
 
 /*==============TABLET PORTRAIT==============*/
 @media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    @include flex(column nowrap, center, center);
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        font-size: 1.3rem;
+        letter-spacing: 20px;
+
+        .fas,
+        .fab {
+          @include links($nav, $nav, $nav_hover, $nav);
+          color: $beige;
+        }
+      }
+    }
+  }
 
 }
 
 /*==============TABLET LANDSCAPE==============*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  footer {
+    height: 100%;
+    width: 100px;
+    display: flex !important;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+    ul {
+      position: fixed;
+      align-self: center;
+      padding: 0 16px;
+      list-style: none;
+      width: auto;
+
+      li {
+        margin-bottom: 35px;
+        font-size: 1rem;
+        display: block;
+
+        .fas,
+        .fab {
+          @include links($nav, $nav, $nav_hover, $nav);
+        }
+      }
+    }
+  }
 }
 
 /*=================DESKTOP===================*/
@@ -59,6 +128,7 @@
       li {
         margin-bottom: 35px;
         font-size: 1rem;
+        display: block;
 
         .fas,
         .fab {

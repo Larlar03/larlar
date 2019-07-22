@@ -18,24 +18,23 @@
 
         #left {
             grid-area: left;
-            
+
         }
 
         #right {
             grid-area: right;
         }
     }
-
 }
 
 /*==============MOBILE LANDSCAPE==============*/
 @media (min-width: 481px) and (max-width: 767px) {
     body {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 170px 150px auto;
+        grid-template-rows: 76px 220px 100px auto;
         grid-template-areas: "header""left""footer""right";
 
         header {
@@ -44,17 +43,15 @@
 
         footer {
             grid-area: footer;
-            background-color: pink;
         }
 
         #left {
             grid-area: left;
-            background-color: blue;
+
         }
 
         #right {
             grid-area: right;
-            background-color: orange;
         }
     }
 }
@@ -62,11 +59,11 @@
 /*==============TABLET PORTRAIT==============*/
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 170px 150px auto;
+        grid-template-rows: 76px 220px 100px auto;
         grid-template-areas: "header""left""footer""right";
 
         header {
@@ -75,25 +72,56 @@
 
         footer {
             grid-area: footer;
-            background-color: pink;
         }
 
         #left {
             grid-area: left;
-            background-color: blue;
+
         }
 
         #right {
             grid-area: right;
-            background-color: orange;
         }
     }
 }
 
 /*==============TABLET LANDSCAPE==============*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
+    body {
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100px 1fr 2fr 100px;
+        grid-template-rows: 100vh;
+        grid-template-areas: "header left right footer";
+        grid-gap: 0 20px;
 
+        header {
+            grid-area: header;
+
+            p {
+                position: fixed;
+            }
+        }
+
+        footer {
+            grid-area: footer;
+
+            p {
+                position: fixed;
+            }
+        }
+
+        #left {
+            grid-area: left;
+        }
+
+        #right {
+            grid-area: right;
+        }
+    }
+
+}
 /*=================DESKTOP===================*/
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
@@ -106,6 +134,7 @@
 
         header {
             grid-area: header;
+
             p {
                 position: fixed;
             }
@@ -113,6 +142,7 @@
 
         footer {
             grid-area: footer;
+
             p {
                 position: fixed;
             }
