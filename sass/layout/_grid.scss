@@ -1,32 +1,28 @@
 /*==============MOBILE PORTRAIT==============*/
 @media (min-width: 320px) and (max-width: 480px) {
     body {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 170px 150px auto;
+        grid-template-rows: 76px 220px 100px auto;
         grid-template-areas: "header""left""footer""right";
 
         header {
             grid-area: header;
-            background-color: pink;
         }
 
         footer {
             grid-area: footer;
-            background-color: pink;
         }
 
         #left {
             grid-area: left;
-            background-color: blue;
             
         }
 
         #right {
             grid-area: right;
-            background-color: orange;
         }
     }
 
@@ -39,12 +35,11 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 170px 150px auto;
+        grid-template-rows: 76px 170px 150px auto;
         grid-template-areas: "header""left""footer""right";
 
         header {
             grid-area: header;
-            background-color: pink;
         }
 
         footer {
@@ -71,12 +66,11 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 170px 150px auto;
+        grid-template-rows: 76px 170px 150px auto;
         grid-template-areas: "header""left""footer""right";
 
         header {
             grid-area: header;
-            background-color: pink;
         }
 
         footer {

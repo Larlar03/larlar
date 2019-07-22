@@ -1,8 +1,161 @@
 /*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    header {
+
+      #desklogo {
+        display: none;
+      }
+
+      #desknav {
+        display: none;
+      }
+
+      #mobnav {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: rgba(255, 255, 255, 1) !important;
+
+        #moblogo {
+          height: 50px;
+          padding: 0;
+          margin: 0;
+        }
+
+        .navbar-nav {
+          .top-nav-item {
+            padding-top: 30px !important;
+          }
+          .nav-item {
+            padding: 12px 0;
+          }
+
+          .active {
+            color: $primarycolor;
+          }
+
+          a {
+            .navlink {
+              @include links($nav, $nav, $nav_hover, $darkpink);
+            }
+          }
+
+        }
+
+        .navbar-toggler {
+          color: rgba(0, 0, 0, 0) !important;
+          border-color: rgba(0, 0, 0, 0) !important;
+        }
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(234, 149, 188, 1)' stroke-width='3' stroke-linecap='straight' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+        }
+      }
+    }
+  }
+}
 
 /*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+  #desklogo {
+    display: none;
+  }
+
+  #desknav {
+    display: none;
+  }
+  #mobnav {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    #moblogo {
+      height: 50px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        padding: 12px 0;
+      }
+
+      .active {
+        color: $primarycolor;
+      }
+
+      a {
+        .navlink {
+          @include links($nav, $nav, $nav_hover, $darkpink);
+        }
+      }
+
+    }
+
+    .navbar-toggler {
+      color: rgba(0, 0, 0, 0) !important;
+      border-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(234, 149, 188, 1)' stroke-width='3' stroke-linecap='straight' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    }
+  }
+}
 
 /*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #desklogo {
+    display: none;
+  }
+
+  #desknav {
+    display: none;
+  }
+  #mobnav {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    #moblogo {
+      height: 50px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        padding: 12px 0;
+      }
+
+      .active {
+        color: $primarycolor;
+      }
+
+      a {
+        .navlink {
+          @include links($nav, $nav, $nav_hover, $darkpink);
+        }
+      }
+
+    }
+
+    .navbar-toggler {
+      color: rgba(0, 0, 0, 0) !important;
+      border-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(234, 149, 188, 1)' stroke-width='3' stroke-linecap='straight' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    }
+  }
+}
 
 /*==============TABLET LANDSCAPE==============*/
 
@@ -13,7 +166,7 @@
     width: 172px;
     position: fixed;
 
-    #logo {
+    #desklogo {
       width: 100%;
       margin: 20px auto 20px auto;
 
@@ -22,35 +175,35 @@
         margin: 0 auto;
       }
     }
-  }
 
-  .spacing {
-    width: 172px;
-  }
+    .spacing {
+      width: 172px;
+    }
 
-  nav {
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
+    nav {
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
 
-    ul {
-      padding: 0;
-      align-self: center;
-      list-style: none;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      transform: rotate(-180deg);
+      ul {
+        padding: 0;
+        align-self: center;
+        list-style: none;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(-180deg);
 
-      li {
-        display: inline-block;
-        margin-bottom: 25px;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        li {
+          display: inline-block;
+          margin-bottom: 25px;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
 
-        a {
+          a {
             @include links($nav, $nav, $nav_hover, $darkpink);
+          }
         }
       }
     }

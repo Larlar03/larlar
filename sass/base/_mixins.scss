@@ -9,7 +9,7 @@
   /*Flexbox*/
 @mixin flex($flow, $jcontent, $acontent) {
   display: flex;
-  flex-fow: $flow;
+  flex-flow: $flow;
   justify-content: $jcontent;
   align-content: $acontent;
 }
