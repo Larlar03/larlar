@@ -226,7 +226,12 @@
     width: 172px;
     position: fixed;
 
+    #mobnav {
+      display: none;
+    }
+
     #desklogo {
+      display: flex;
       width: 100%;
       margin: 20px auto 20px auto;
 
@@ -258,6 +263,62 @@
           display: inline-block;
           margin-bottom: 25px;
           font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+
+          a {
+            @include links($nav, $nav, $nav_hover, $darkpink);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=================DESKTOP HI-RES===================*/
+@media (min-width: 1281px) {
+  header {
+    height: 100vh;
+    width: 172px;
+    position: fixed;
+
+    #mobnav {
+      display: none;
+    }
+
+    #desklogo {
+      display: flex;
+      width: 100%;
+      margin: 20px auto 30px auto;
+
+      img {
+        width: 60px;
+        margin: 0 auto;
+      }
+    }
+
+    .spacing {
+      width: 172px;
+    }
+
+    nav {
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      ul {
+        padding: 0;
+        align-self: center;
+        list-style: none;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(-180deg);
+
+        li {
+          display: inline-block;
+          margin-bottom: 25px;
+          font-size: 0.8rem;
           text-transform: uppercase;
           letter-spacing: 1px;
 

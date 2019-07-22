@@ -16,20 +16,20 @@
 
 /* Link colors */
 @mixin links($color, $vcolor, $hcolor, $acolor) {
-  color: $color;
+  color: $color !important;
 
   &:visited {
-    color: $vcolor;
+    color: $vcolor !important;
   }
 
   &:hover {
-    color: $hcolor;
+    color: $hcolor !important;
     text-decoration: none;
     transition: 0.5s;
   }
 
   &:active {
-    color: $acolor;
+    color: $acolor !important;
   }
 }
 

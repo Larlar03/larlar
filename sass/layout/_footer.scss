@@ -138,3 +138,33 @@
     }
   }
 }
+
+/*=================DESKTOP HI-RES===================*/
+@media (min-width: 1281px) {
+  footer {
+    height: 100%;
+    width: 172px;
+    display: flex !important;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+    ul {
+      position: fixed;
+      align-self: center;
+      padding: 0 16px;
+      list-style: none;
+
+      li {
+        margin-bottom: 35px;
+        font-size: 1rem;
+        display: block;
+
+        .fas,
+        .fab {
+          @include links($nav, $nav, $nav_hover, $nav);
+        }
+      }
+    }
+  }
+}
