@@ -5,24 +5,20 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 220px 100px auto;
-        grid-template-areas: "header""left""footer""right";
+        grid-template-rows: 76px auto 100px;
+        grid-template-areas: "header""main""footer";
 
         header {
             grid-area: header;
         }
 
+        main {
+            grid-area: main;
+
+        }
+
         footer {
             grid-area: footer;
-        }
-
-        #left {
-            grid-area: left;
-
-        }
-
-        #right {
-            grid-area: right;
         }
     }
 }
@@ -34,24 +30,20 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 220px 100px auto;
-        grid-template-areas: "header""left""footer""right";
+        grid-template-rows: 76px auto 100px;
+        grid-template-areas: "header""main""footer";
 
         header {
             grid-area: header;
         }
 
+        main {
+            grid-area: main;
+
+        }
+
         footer {
             grid-area: footer;
-        }
-
-        #left {
-            grid-area: left;
-
-        }
-
-        #right {
-            grid-area: right;
         }
     }
 }
@@ -63,24 +55,20 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 220px 100px auto;
-        grid-template-areas: "header""left""footer""right";
+        grid-template-rows: 76px auto 100px;
+        grid-template-areas: "header""main""footer";
 
         header {
             grid-area: header;
         }
 
+        main {
+            grid-area: main;
+
+        }
+
         footer {
             grid-area: footer;
-        }
-
-        #left {
-            grid-area: left;
-
-        }
-
-        #right {
-            grid-area: right;
         }
     }
 }
@@ -91,9 +79,9 @@
         width: 100vw;
         height: 100%;
         display: grid;
-        grid-template-columns: 100px 1fr 2fr 100px;
+        grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 100vh;
-        grid-template-areas: "header left right footer";
+        grid-template-areas: "header main footer";
         grid-gap: 0 20px;
 
         header {
@@ -112,27 +100,22 @@
             }
         }
 
-        #left {
-            grid-area: left;
-        }
-
-        #right {
-            grid-area: right;
+        main {
+            grid-area: main;
         }
     }
-
 }
 
 /*=================DESKTOP===================*/
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
-        width: 100vw;
+        width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 172px 1fr 2fr 172px;
+        grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 100vh;
-        grid-template-areas: "header left right footer";
-
+        grid-template-areas: "header main footer";
+        grid-gap: 0;
 
         header {
             grid-area: header;
@@ -150,12 +133,8 @@
             }
         }
 
-        #left {
-            grid-area: left;
-        }
-
-        #right {
-            grid-area: right;
+        main {
+            grid-area: main;
         }
     }
 }
@@ -166,11 +145,10 @@
         width: 100vw;
         height: 100%;
         display: grid;
-        grid-template-columns: 172px 1fr 2fr 172px;
+        grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 100vh;
-        grid-template-areas: "header left right footer";
+        grid-template-areas: "header main footer";
         grid-gap: 0 20px;
-
 
         header {
             grid-area: header;
@@ -188,12 +166,8 @@
             }
         }
 
-        #left {
-            grid-area: left;
-        }
-
-        #right {
-            grid-area: right;
+        main {
+            grid-area: main;
         }
     }
 }
