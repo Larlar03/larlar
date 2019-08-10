@@ -5,20 +5,24 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px auto 100px;
-        grid-template-areas: "header""main""footer";
+        grid-template-rows: 76px 300px 100px auto;
+        grid-template-areas: "header""left""footer""right";
 
         header {
             grid-area: header;
         }
 
-        main {
-            grid-area: main;
+        footer {
+            grid-area: footer;
+        }
+
+        .left {
+            grid-area: left;
 
         }
 
-        footer {
-            grid-area: footer;
+        .right {
+            grid-area: right;
         }
     }
 }
@@ -30,20 +34,24 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px auto 100px;
-        grid-template-areas: "header""main""footer";
+        grid-template-rows: 76px 250px 100px auto;
+        grid-template-areas: "header""left""footer""right";
 
         header {
             grid-area: header;
         }
 
-        main {
-            grid-area: main;
+        footer {
+            grid-area: footer;
+        }
+
+        .left {
+            grid-area: left;
 
         }
 
-        footer {
-            grid-area: footer;
+        .right {
+            grid-area: right;
         }
     }
 }
@@ -55,20 +63,24 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px auto 100px;
-        grid-template-areas: "header""main""footer";
+        grid-template-rows: 76px 250px 100px auto;
+        grid-template-areas: "header""left""footer""right";
 
         header {
             grid-area: header;
         }
 
-        main {
-            grid-area: main;
+        footer {
+            grid-area: footer;
+        }
+
+        .left {
+            grid-area: left;
 
         }
 
-        footer {
-            grid-area: footer;
+        .right {
+            grid-area: right;
         }
     }
 }
@@ -79,9 +91,9 @@
         width: 100vw;
         height: 100%;
         display: grid;
-        grid-template-columns: 100px 1fr 100px;
-        grid-template-rows: 100%;
-        grid-template-areas: "header main footer";
+        grid-template-columns: 100px 1fr 2fr 100px;
+        grid-template-rows: 100vh;
+        grid-template-areas: "header left right footer";
         grid-gap: 0 20px;
 
         header {
@@ -100,23 +112,27 @@
             }
         }
 
-        main {
-            grid-area: main;
+        .left {
+            grid-area: left;
+        }
+
+        .right {
+            grid-area: right;
         }
     }
+
 }
 
 /*=================DESKTOP===================*/
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
-        width: 100%;
+        width: 100vw;
         height: 100%;
         display: grid;
-        grid-template-columns: 172px 1fr 172px;
-        grid-template-rows: 100%;
-        grid-template-areas: "header main footer";
-        grid-gap: 0;
-        margin: 30px auto;
+        grid-template-columns: 172px 1fr 2fr 172px;
+        grid-template-rows: 100vh;
+        grid-template-areas: "header left right footer";
+
 
         header {
             grid-area: header;
@@ -134,8 +150,12 @@
             }
         }
 
-        main {
-            grid-area: main;
+        .left {
+            grid-area: left;
+        }
+
+        .right {
+            grid-area: right;
         }
     }
 }
@@ -146,10 +166,11 @@
         width: 100vw;
         height: 100%;
         display: grid;
-        grid-template-columns: 172px 1fr 172px;
+        grid-template-columns: 172px 1fr 2fr 172px;
         grid-template-rows: 100vh;
-        grid-template-areas: "header main footer";
+        grid-template-areas: "header left right footer";
         grid-gap: 0 20px;
+
 
         header {
             grid-area: header;
@@ -167,8 +188,12 @@
             }
         }
 
-        main {
-            grid-area: main;
+        .left {
+            grid-area: left;
+        }
+
+        .right {
+            grid-area: right;
         }
     }
 }
