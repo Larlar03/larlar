@@ -1,28 +1,186 @@
 /*==============MOBILE PORTRAIT==============*/
 @media (min-width: 320px) and (max-width: 480px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
 
+            .about-intro {
+                width: 80% !important;
+                height: auto;
+                margin:auto;
+                text-align: center;
+
+                h1 {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 50px auto;
+            background-color: #DBBABC;
+        }
+    }
 }
 
 /*==============MOBILE LANDSCAPE==============*/
 @media (min-width: 481px) and (max-width: 767px) {
+    body {
+        .left {
+           margin:auto;
+            .about-intro {
+                width: 80% !important;
+                height: auto;
+                margin: auto;
+                text-align: center;
 
+                h1 {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 50px auto;
+            background-color: #DBBABC;
+        }
+    }
 }
 
 /*==============TABLET PORTRAIT==============*/
 @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
 
+            .about-intro {
+                width: 80% !important;
+                height: auto;
+                margin: auto;
+                text-align: center;
+
+                h1 {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 50px auto;
+            background-color: #DBBABC;
+        }
+    }
 }
 
 /*==============TABLET LANDSCAPE==============*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        .left {
+         
+            .about-intro {
+                display: inline-block;
+                width: 90% !important;
+                text-align: left;
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            padding: 70px 0;
+            background-color: #DBBABC;
+        }
+    }
 }
 
 /*=================DESKTOP===================*/
 @media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
 
+            .about-intro {
+                display: inline-block;
+                width: 90% !important;
+                margin: 0 auto;
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            padding: 70px 0;
+            background-color: #DBBABC;
+        }
+    }
 }
 
 /*=================DESKTOP HI-RES===================*/
 @media (min-width: 1281px) {
-    
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+
+            .about-intro {
+                display: inline-block;
+                width: 100% !important;
+                margin: 0 auto;
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            padding: 70px 0;
+            background-color: #DBBABC;
+        }
+    }
 }
