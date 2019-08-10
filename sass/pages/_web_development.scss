@@ -18,11 +18,10 @@
             }
 
             .web-dev-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 157px);
-                grid-template-rows: repeat(3, 120px);
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(6, 300px);
                 grid-gap: 20px;
-                grid-template-areas: "dev1 dev2""dev3 dev4""dev5 dev6";
+                grid-template-areas: "dev1""dev2""dev3" "dev4""dev5""dev6";
                 margin: 30px auto;
 
                 .dev1,
@@ -40,7 +39,12 @@
 
                 h4 {
                     text-align: center;
-                    margin-top: 3px;
+                    margin-top: 8px;
+                    &:hover {
+                        color: #C6A5A8;
+                        transition: 0.5s;
+                        text-decoration: none !important;
+                    }
 
                 }
 
@@ -116,7 +120,11 @@
                 h4 {
                     text-align: center;
                     margin-top: 3px;
-
+                    &:hover {
+                        color: #C6A5A8;
+                        transition: 0.5s;
+                        text-decoration: none !important;
+                    }
                 }
 
                 .dev1 {
@@ -195,7 +203,11 @@
                     text-align: center;
                     margin-top: 8px;
                     font-size: 0.8rem;
-
+                    &:hover {
+                        color: #C6A5A8;
+                        transition: 0.5s;
+                        text-decoration: none !important;
+                    }
                 }
 
                 .dev1 {
@@ -276,7 +288,11 @@
                     text-align: center;
                     margin-top: 5px;
                     font-size: 0.6rem;
-
+                    &:hover {
+                        color: #C6A5A8;
+                        transition: 0.5s;
+                        text-decoration: none !important;
+                    }
                 }
 
                 .dev1 {
@@ -358,7 +374,11 @@
                     text-align: center;
                     margin-top: 5px;
                     font-size: 0.6rem;
-
+                    &:hover {
+                        color: #C6A5A8;
+                        transition: 0.5s;
+                        text-decoration: none !important;
+                    }
                 }
 
                 .dev1 {
