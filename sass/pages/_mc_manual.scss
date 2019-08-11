@@ -1,0 +1,478 @@
+/*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+
+            .mcm-intro {
+                width: 80% !important;
+                height: auto;
+                margin: auto;
+                text-align: center;
+
+                h1 {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 20px auto;
+
+            .mcm-grid {
+                display: grid;
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 20px;
+                grid-template-areas: "mc1""mc2""mc3""mc3""mc4""mc4""mc5""mc6""mc7""mc8";
+            }
+
+            .mc1,
+            .mc2,
+            .mc3,
+            .mc4,
+            .mc5,
+            .mc6,
+            .mc7,
+            .mc8,
+                {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mc1 {
+                grid-area: mc1;
+            }
+
+            .mc2 {
+                grid-area: mc2;
+            }
+
+            .mc3 {
+                grid-area: mc3;
+            }
+
+            .mc4 {
+                grid-area: mc4;
+            }
+
+            .mc5 {
+                grid-area: mc5;
+            }
+
+            .mc6 {
+                grid-area: mc6;
+            }
+        }
+    }
+}
+
+/*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        .left {
+            margin: auto;
+
+            .mcm-intro {
+                width: 80% !important;
+                height: auto;
+                margin: auto;
+                text-align: center;
+
+                h1 {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 20px auto;
+
+            .mcm-grid {
+                display: grid;
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 20px;
+                grid-template-areas: "mc1""mc2""mc3""mc3""mc4""mc4""mc5""mc6""mc7""mc8";
+            }
+
+            .mc1,
+            .mc2,
+            .mc3,
+            .mc4,
+            .mc5,
+            .mc6,
+            .mc7,
+            .mc8,
+                {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mc1 {
+                grid-area: mc1;
+            }
+
+            .mc2 {
+                grid-area: mc2;
+            }
+
+            .mc3 {
+                grid-area: mc3;
+            }
+
+            .mc4 {
+                grid-area: mc4;
+            }
+
+            .mc5 {
+                grid-area: mc5;
+            }
+
+            .mc6 {
+                grid-area: mc6;
+            }
+        }
+    }
+}
+
+/*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+
+            .mcm-intro {
+                width: 80% !important;
+                height: auto;
+                margin: auto;
+                text-align: center;
+
+                h1 {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            padding: 20px 0;
+
+            .mcm-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 335px);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 20px;
+                grid-template-areas: "mc1 mc2""mc3 mc3""mc4 mc4""mc5 mc6""mc7 mc8";
+                margin: 0 auto;
+            }
+
+            .mc1,
+            .mc2,
+            .mc3,
+            .mc4,
+            .mc5,
+            .mc6,
+            .mc7,
+            .mc8,
+                {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mc1 {
+                grid-area: mc1;
+            }
+
+            .mc2 {
+                grid-area: mc2;
+            }
+
+            .mc3 {
+                grid-area: mc3;
+            }
+
+            .mc4 {
+                grid-area: mc4;
+            }
+
+            .mc5 {
+                grid-area: mc5;
+            }
+
+            .mc6 {
+                grid-area: mc6;
+            }
+        }
+    }
+}
+
+/*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        .left {
+
+            .mcm-intro {
+                display: inline-block;
+                width: 90% !important;
+                text-align: left;
+                margin: 0;
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-content: center;
+            margin: 0 auto;
+            padding: 20px 0;
+
+            .mcm-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 20px;
+                grid-template-areas: "mc1 mc2""mc3 mc3""mc4 mc4""mc5 mc6""mc7 mc8";
+                margin: 0 auto;
+            }
+
+            .mc1,
+            .mc2,
+            .mc3,
+            .mc4,
+            .mc5,
+            .mc6,
+            .mc7,
+            .mc8,
+                {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mc1 {
+                grid-area: mc1;
+            }
+
+            .mc2 {
+                grid-area: mc2;
+            }
+
+            .mc3 {
+                grid-area: mc3;
+            }
+
+            .mc4 {
+                grid-area: mc4;
+            }
+
+            .mc5 {
+                grid-area: mc5;
+            }
+
+            .mc6 {
+                grid-area: mc6;
+            }
+        }
+    }
+}
+
+/*=================DESKTOP===================*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+
+            .mcm-intro {
+                display: inline-block;
+                width: 85% !important;
+                margin: 0;
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-content: center;
+            margin: 0 auto;
+            padding: 20px 0;
+
+            .mcm-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 20px;
+                grid-template-areas: "mc1 mc2""mc3 mc3""mc4 mc4""mc5 mc6""mc7 mc8";
+            }
+
+            .mc1,
+            .mc2,
+            .mc3,
+            .mc4,
+            .mc5,
+            .mc6,
+            .mc7,
+            .mc8,
+                {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mc1 {
+                grid-area: mc1;
+            }
+
+            .mc2 {
+                grid-area: mc2;
+            }
+
+            .mc3 {
+                grid-area: mc3;
+            }
+
+            .mc4 {
+                grid-area: mc4;
+            }
+
+            .mc5 {
+                grid-area: mc5;
+            }
+
+            .mc6 {
+                grid-area: mc6;
+            }
+        }
+    }
+}
+
+/*=================DESKTOP HI-RES===================*/
+@media (min-width: 1281px) {
+    body {
+        .left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+
+            .mcm-intro {
+                display: inline-block;
+                width: 100% !important;
+                margin: 0 auto;
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            padding: 70px 0;
+
+            .mcm-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 20px;
+                grid-template-areas: "mc1 mc2""mc3 mc3""mc4 mc4""mc5 mc6""mc7 mc8";
+            }
+
+            .mc1,
+            .mc2,
+            .mc3,
+            .mc4,
+            .mc5,
+            .mc6,
+            .mc7,
+            .mc8,
+                {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mc1 {
+                grid-area: mc1;
+            }
+
+            .mc2 {
+                grid-area: mc2;
+            }
+
+            .mc3 {
+                grid-area: mc3;
+            }
+
+            .mc4 {
+                grid-area: mc4;
+            }
+
+            .mc5 {
+                grid-area: mc5;
+            }
+
+            .mc6 {
+                grid-area: mc6;
+            }
+        }
+    }
+}
