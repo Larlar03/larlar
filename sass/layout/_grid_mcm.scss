@@ -5,8 +5,8 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 400px 100px auto;
-        grid-template-areas: "header""left""footer""right";
+        grid-template-rows: 76px 400px auto 100px ;
+        grid-template-areas: "header""left""right""footer";
 
         header {
             grid-area: header;
@@ -63,8 +63,8 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 76px 250px 100px auto;
-        grid-template-areas: "header""left""footer""right";
+        grid-template-rows: 76px 250px auto 100px;
+        grid-template-areas: "header""left""right""footer";
 
         header {
             grid-area: header;
