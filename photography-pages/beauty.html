@@ -12,20 +12,17 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <!--Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
   <!--CSS Stylesheet-->
   <link rel="stylesheet" href="../css/photography_pages_master.css">
   <link rel="stylesheet" href="../css/master.css">
-  <!--Carousel Stylesheet-->
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!--Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 </head>
 
@@ -42,15 +39,14 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link top-nav-item" href="index.html">Home</a>
           <a class="nav-item nav-link active" href="web-development.html">Web Development<span>
-                <class="sr-only"(current)</span></a>
-          <a class="nav-item nav-link" href="photography.html">Photography</a>
+              <class="sr-only"(current)</span> </a> <a class="nav-item nav-link" href="photography.html">Photography</a>
           <a class="nav-item nav-link" href="mc-manual.html">Micro-Celebrity Manual</a>
           <a class="nav-item nav-link" href="about.html">About</a>
         </div>
       </div>
     </nav>
     <!--Desktop Nav-->
-    <div id="desklogo"><img src="img/logo.jpg" alt="Larlar logo"></div>
+    <div id="desklogo"><img src="../img/logo.jpg" alt="Larlar logo"></div>
     <nav id="desknav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -62,26 +58,25 @@
     </nav>
     <div class="spacing"></div>
   </header>
-  
+
   <!--Main-->
   <main>
-    <section class="heading"><h1>Beauty</h1>
-    <h3>Fashion, Portrait & E-commerce</h3>
-  </section>
-  <section class="photography-slideshow">
-    <div class="owl-carousel">
-      <div><img src="../img/photos/homepage-one.png" alt="one"></div>
-      <div><img src="../img/photos/homepage-two.png" alt="two"></div>
-      <div><img src="../img/photos/homepage-one.png" alt="one"></div>
-      <div><img src="../img/photos/homepage-two.png" alt="two"></div>
-      <div><img src="../img/photos/homepage-one.png" alt="one"></div>
-      <div><img src="../img/photos/homepage-two.png" alt="two"></div>
-      <div><img src="../img/photos/homepage-one.png" alt="one"></div>
-    </div>
-  </section>
+    <section class="heading">
+      <h1>Beauty</h1>
+      <h3>Fashion, Portrait & E-commerce</h3>
+    </section>
+    <section class="photography-slideshow">
+      <div class="my-slider">
+        <div><img src="../img/photos/homepage-one.png" alt="one"></div>
+        <div><img src="../img/photos/homepage-two.png" alt="two"></div>
+        <div><img src="../img/photos/homepage-one.png" alt="one"></div>
+        <div><img src="../img/photos/homepage-two.png" alt="two"></div>
+        <div><img src="../img/photos/homepage-one.png" alt="one"></div>
+        <div><img src="../img/photos/homepage-two.png" alt="two"></div>
+        <div><img src="../img/photos/homepage-one.png" alt="one"></div>
+      </div>
+    </section>
 
-
-      
   </main>
 
   <footer>
@@ -93,7 +88,10 @@
       <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/"><i class="fab fa-linkedin-in"></i></a></li>
       <li><a href="https://github.com/Larlar03"><i class="fab fa-github"></i></a></li>
     </ul>
+
   </footer>
+
+
 
   <!--Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -105,19 +103,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
   </script>
-
-  <!--JS-->
-  <script src="js/main.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-  </script>
-
-<!--Carousel JS-->
-<script src="jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 
 </body>
 
