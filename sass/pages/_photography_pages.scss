@@ -17,42 +17,22 @@
                 margin-bottom: 20px;
             }
 
-
-            .photo-slider {
+            .wrapper {
                 width: 100%;
-                height: 100%;
-
-                .swiper-container {
-                    width: 100%;
-                    height: 100%;
+                height: auto;
+                overflow: hidden;
+                margin: 60px auto;
+                .item {
                     cursor: all-scroll;
-
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-                    }
+                    background-color: pink;
+                    height: 500px;
                 }
-            }
-
-            
-
+                .owl-dots {
+                }
             }
         }
     }
+}
 
 /*==============MOBILE LANDSCAPE==============*/
 @media (min-width: 481px) and (max-width: 767px) {
@@ -72,88 +52,18 @@
                 text-align: center;
                 margin-bottom: 20px;
             }
-
-            .photography-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 256px);
-                grid-template-rows: repeat(6, 203px);
-                grid-gap: 20px;
-                grid-template-areas: "photo1 photo2""photo3 photo4""photo5 photo6""photo7 photo8""photo9 photo10""photo11 photo12";
-                margin: 30px auto;
-
-                .photo1,
-                .photo2,
-                .photo3,
-                .photo4,
-                .photo5,
-                .photo6,
-                .photo7,
-                .photo8,
-                .photo9,
-                .photo10,
-                .photo11,
-                .photo12 {
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                    }
+            .wrapper {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                margin: 60px auto;
+                .item {
+                    cursor: all-scroll;
+                    background-color: pink;
+                    height: 500px;
                 }
-
-                h4 {
-                    text-align: center;
-                    margin-top: 3px;
-
+                .owl-dots {
                 }
-
-                .photo1 {
-                    grid-area: photo1;
-                }
-
-                .photo2 {
-                    grid-area: photo2;
-                }
-
-                .photo3 {
-                    grid-area: photo3;
-                }
-
-                .photo4 {
-                    grid-area: photo4;
-                }
-
-                .photo5 {
-                    grid-area: photo5;
-                }
-
-                .photo6 {
-                    grid-area: photo6;
-                }
-
-                .photo7 {
-                    grid-area: photo7;
-                }
-
-                .photo8 {
-                    grid-area: photo8;
-                }
-
-                .photo9 {
-                    grid-area: photo9;
-                }
-
-                .photo10 {
-                    grid-area: photo10;
-                }
-
-                .photo11 {
-                    grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
-                }
-
             }
         }
     }
@@ -181,97 +91,6 @@
                     margin-bottom: 20px;
                 }
             }
-
-            .photography-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 335px);
-                grid-template-rows: repeat(6, 256px);
-                grid-gap: 20px;
-                grid-template-areas: "photo1 photo2""photo3 photo4""photo5 photo6"
-                    "photo7 photo8""photo9 photo10""photo11 photo12";
-                margin: 30px auto;
-
-                .photo1,
-                .photo2,
-                .photo3,
-                .photo4,
-                .photo5,
-                .photo6,
-                .photo7,
-                .photo8,
-                .photo9,
-                .photo10,
-                .photo11,
-                .photo12 {
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                h4 {
-                    text-align: center;
-                    margin-top: 8px;
-                    font-size: 0.8rem;
-
-                    &:hover {
-                        color: #C6A5A8;
-                        transition: 0.5s;
-                        text-decoration: none !important;
-                    }
-
-                }
-
-                .photo1 {
-                    grid-area: photo1;
-                }
-
-                .photo2 {
-                    grid-area: photo2;
-                }
-
-                .photo3 {
-                    grid-area: photo3;
-                }
-
-                .photo4 {
-                    grid-area: photo4;
-                }
-
-                .photo5 {
-                    grid-area: photo5;
-                }
-
-                .photo6 {
-                    grid-area: photo6;
-                }
-
-                .photo7 {
-                    grid-area: photo7;
-                }
-
-                .photo8 {
-                    grid-area: photo8;
-                }
-
-                .photo9 {
-                    grid-area: photo9;
-                }
-
-                .photo10 {
-                    grid-area: photo10;
-                }
-
-                .photo11 {
-                    grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
-                }
-
-            }
         }
     }
 }
@@ -298,96 +117,6 @@
                     text-align: center;
                     margin-bottom: 20px;
                 }
-            }
-
-
-            .photography-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 224px);
-                grid-template-rows: repeat(4, 167px);
-                grid-gap: 40px 20px;
-                grid-template-areas: "photo1 photo2 photo3""photo4 photo5 photo6""photo7 photo8 photo9""photo10 photo11 photo12";
-                margin: 30px auto;
-
-                .photo1,
-                .photo2,
-                .photo3,
-                .photo4,
-                .photo5,
-                .photo6,
-                .photo7,
-                .photo8,
-                .photo9,
-                .photo10,
-                .photo11,
-                .photo12 {
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                h4 {
-                    text-align: center;
-                    margin-top: 5px;
-                    font-size: 0.6rem;
-
-                    &:hover {
-                        color: #C6A5A8;
-                        transition: 0.5s;
-                        text-decoration: none !important;
-                    }
-                }
-
-                .photo1 {
-                    grid-area: photo1;
-                }
-
-                .photo2 {
-                    grid-area: photo2;
-                }
-
-                .photo3 {
-                    grid-area: photo3;
-                }
-
-                .photo4 {
-                    grid-area: photo4;
-                }
-
-                .photo5 {
-                    grid-area: photo5;
-                }
-
-                .photo6 {
-                    grid-area: photo6;
-                }
-
-                .photo7 {
-                    grid-area: photo7;
-                }
-
-                .photo8 {
-                    grid-area: photo8;
-                }
-
-                .photo9 {
-                    grid-area: photo9;
-                }
-
-                .photo10 {
-                    grid-area: photo10;
-                }
-
-                .photo11 {
-                    grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
-                }
-
             }
         }
     }
@@ -417,37 +146,7 @@
                     margin-bottom: 20px;
                 }
             }
-
-            .photo-slider {
-                width: 100%;
-                height: 100%;
-
-                .swiper-container {
-                    width: 900px;
-                    height: 100%;
-                    cursor: all-scroll;
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-                    }
-                }
-            }
         }
-
     }
 }
 
