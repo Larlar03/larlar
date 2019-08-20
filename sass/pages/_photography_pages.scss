@@ -17,42 +17,28 @@
                 margin-bottom: 20px;
             }
 
+            .carousel-wrapper {
+                display: none;
+            }
 
-            .photo-slider {
-                width: 100%;
-                height: 100%;
+            .photo-grid-wrapper {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto;
+                grid-row-gap: 20px;
+                margin: 60px 20px;
 
-                .swiper-container {
-                    width: 100%;
-                    height: 100%;
-                    cursor: all-scroll;
+                .grid-item {
+                    overflow: hidden;
 
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
+                    img {
+                        width: 100%;
                     }
                 }
             }
-
-            
-
-            }
         }
     }
+}
 
 /*==============MOBILE LANDSCAPE==============*/
 @media (min-width: 481px) and (max-width: 767px) {
@@ -73,87 +59,24 @@
                 margin-bottom: 20px;
             }
 
-            .photography-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 256px);
-                grid-template-rows: repeat(6, 203px);
-                grid-gap: 20px;
-                grid-template-areas: "photo1 photo2""photo3 photo4""photo5 photo6""photo7 photo8""photo9 photo10""photo11 photo12";
-                margin: 30px auto;
+            .carousel-wrapper {
+                display: none;
+            }
 
-                .photo1,
-                .photo2,
-                .photo3,
-                .photo4,
-                .photo5,
-                .photo6,
-                .photo7,
-                .photo8,
-                .photo9,
-                .photo10,
-                .photo11,
-                .photo12 {
+            .photo-grid-wrapper {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto;
+                grid-row-gap: 40px;
+                margin: 60px 40px;
+
+                .grid-item {
                     overflow: hidden;
 
                     img {
                         width: 100%;
                     }
                 }
-
-                h4 {
-                    text-align: center;
-                    margin-top: 3px;
-
-                }
-
-                .photo1 {
-                    grid-area: photo1;
-                }
-
-                .photo2 {
-                    grid-area: photo2;
-                }
-
-                .photo3 {
-                    grid-area: photo3;
-                }
-
-                .photo4 {
-                    grid-area: photo4;
-                }
-
-                .photo5 {
-                    grid-area: photo5;
-                }
-
-                .photo6 {
-                    grid-area: photo6;
-                }
-
-                .photo7 {
-                    grid-area: photo7;
-                }
-
-                .photo8 {
-                    grid-area: photo8;
-                }
-
-                .photo9 {
-                    grid-area: photo9;
-                }
-
-                .photo10 {
-                    grid-area: photo10;
-                }
-
-                .photo11 {
-                    grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
-                }
-
             }
         }
     }
@@ -180,97 +103,26 @@
                     text-align: center;
                     margin-bottom: 20px;
                 }
-            }
 
-            .photography-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 335px);
-                grid-template-rows: repeat(6, 256px);
-                grid-gap: 20px;
-                grid-template-areas: "photo1 photo2""photo3 photo4""photo5 photo6"
-                    "photo7 photo8""photo9 photo10""photo11 photo12";
-                margin: 30px auto;
-
-                .photo1,
-                .photo2,
-                .photo3,
-                .photo4,
-                .photo5,
-                .photo6,
-                .photo7,
-                .photo8,
-                .photo9,
-                .photo10,
-                .photo11,
-                .photo12 {
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
+                .carousel-wrapper {
+                    display: none;
+                }
+    
+                .photo-grid-wrapper {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto;
+                    grid-row-gap: 40px;
+                    margin: 60px 50px;
+    
+                    .grid-item {
+                        overflow: hidden;
+    
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
-
-                h4 {
-                    text-align: center;
-                    margin-top: 8px;
-                    font-size: 0.8rem;
-
-                    &:hover {
-                        color: #C6A5A8;
-                        transition: 0.5s;
-                        text-decoration: none !important;
-                    }
-
-                }
-
-                .photo1 {
-                    grid-area: photo1;
-                }
-
-                .photo2 {
-                    grid-area: photo2;
-                }
-
-                .photo3 {
-                    grid-area: photo3;
-                }
-
-                .photo4 {
-                    grid-area: photo4;
-                }
-
-                .photo5 {
-                    grid-area: photo5;
-                }
-
-                .photo6 {
-                    grid-area: photo6;
-                }
-
-                .photo7 {
-                    grid-area: photo7;
-                }
-
-                .photo8 {
-                    grid-area: photo8;
-                }
-
-                .photo9 {
-                    grid-area: photo9;
-                }
-
-                .photo10 {
-                    grid-area: photo10;
-                }
-
-                .photo11 {
-                    grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
-                }
-
             }
         }
     }
@@ -299,96 +151,6 @@
                     margin-bottom: 20px;
                 }
             }
-
-
-            .photography-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 224px);
-                grid-template-rows: repeat(4, 167px);
-                grid-gap: 40px 20px;
-                grid-template-areas: "photo1 photo2 photo3""photo4 photo5 photo6""photo7 photo8 photo9""photo10 photo11 photo12";
-                margin: 30px auto;
-
-                .photo1,
-                .photo2,
-                .photo3,
-                .photo4,
-                .photo5,
-                .photo6,
-                .photo7,
-                .photo8,
-                .photo9,
-                .photo10,
-                .photo11,
-                .photo12 {
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                h4 {
-                    text-align: center;
-                    margin-top: 5px;
-                    font-size: 0.6rem;
-
-                    &:hover {
-                        color: #C6A5A8;
-                        transition: 0.5s;
-                        text-decoration: none !important;
-                    }
-                }
-
-                .photo1 {
-                    grid-area: photo1;
-                }
-
-                .photo2 {
-                    grid-area: photo2;
-                }
-
-                .photo3 {
-                    grid-area: photo3;
-                }
-
-                .photo4 {
-                    grid-area: photo4;
-                }
-
-                .photo5 {
-                    grid-area: photo5;
-                }
-
-                .photo6 {
-                    grid-area: photo6;
-                }
-
-                .photo7 {
-                    grid-area: photo7;
-                }
-
-                .photo8 {
-                    grid-area: photo8;
-                }
-
-                .photo9 {
-                    grid-area: photo9;
-                }
-
-                .photo10 {
-                    grid-area: photo10;
-                }
-
-                .photo11 {
-                    grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
-                }
-
-            }
         }
     }
 }
@@ -416,38 +178,29 @@
                     text-align: center;
                     margin-bottom: 20px;
                 }
-            }
 
-            .photo-slider {
-                width: 100%;
-                height: 100%;
+                .photo-grid-wrapper {
+                    display: none;
+                }
 
-                .swiper-container {
-                    width: 900px;
-                    height: 100%;
-                    cursor: all-scroll;
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
+                .carousel-wrapper {
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin: 60px auto;
+
+                    .item-grid-container {
+                        .item {
+                            cursor: all-scroll;
+                            background-color: pink;
+                            height: 600px;
+                        }
                     }
+
+                    .owl-dots {}
                 }
             }
         }
-
     }
 }
 
