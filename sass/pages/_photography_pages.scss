@@ -41,7 +41,7 @@
 }
 
 /*==============MOBILE LANDSCAPE==============*/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px)  {
     body {
         main {
             width: 100%;
@@ -91,36 +91,32 @@
             display: flex;
             flex-flow: column nowrap;
 
-            .heading {
+            h1 {
+                text-align: center;
+                margin: 40px 0 20px 0;
+            }
+
+            h3 {
+                text-align: center;
                 margin-bottom: 20px;
+            }
 
-                h1 {
-                    text-align: center;
-                    margin: 40px 0 20px 0;
-                }
+            .carousel-wrapper {
+                display: none;
+            }
 
-                h3 {
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
+            .photo-grid-wrapper {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto;
+                grid-row-gap: 40px;
+                margin: 60px 40px;
 
-                .carousel-wrapper {
-                    display: none;
-                }
-    
-                .photo-grid-wrapper {
-                    display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows: 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto 1auto;
-                    grid-row-gap: 40px;
-                    margin: 60px 50px;
-    
-                    .grid-item {
-                        overflow: hidden;
-    
-                        img {
-                            width: 100%;
-                        }
+                .grid-item {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
                     }
                 }
             }
@@ -132,8 +128,9 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     body {
         main {
-            width: 100%;
-            height: 100%;
+            max-width: 800px;
+            height:auto;
+            margin: 0 auto;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
@@ -143,13 +140,23 @@
 
                 h1 {
                     text-align: center;
-                    margin: 40px 0 20px 0;
+                    margin: 20px 0 20px 0;
                 }
 
                 h3 {
                     text-align: center;
                     margin-bottom: 20px;
                 }
+            }
+
+            .carousel-wrapper {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .photo-grid-wrapper {
+                display: none;
             }
         }
     }
@@ -159,46 +166,36 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
         main {
-            width: 100%;
-            height: 100%;
+            min-width: 680px;
+            max-width: 936px;
+            height:auto;
+            margin: 0 auto;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            justify-self: center;
 
             .heading {
                 margin-bottom: 20px;
 
                 h1 {
                     text-align: center;
-                    margin: 20px 0;
+                    margin: 20px 0 20px 0;
                 }
 
                 h3 {
                     text-align: center;
                     margin-bottom: 20px;
                 }
+            }
 
-                .photo-grid-wrapper {
-                    display: none;
-                }
+            .carousel-wrapper {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
 
-                .carousel-wrapper {
-                    width: 100%;
-                    height: auto;
-                    overflow: hidden;
-                    margin: 60px auto;
-
-                    .item-grid-container {
-                        .item {
-                            cursor: all-scroll;
-                            background-color: pink;
-                            height: 600px;
-                        }
-                    }
-
-                    .owl-dots {}
-                }
+            .photo-grid-wrapper {
+                display: none;
             }
         }
     }
