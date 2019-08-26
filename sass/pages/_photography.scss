@@ -22,7 +22,7 @@
                 grid-template-columns: repeat(1, 100%);
                 grid-template-rows: repeat(12, 300px);
                 grid-gap: 20px;
-                grid-template-areas: "photo1""photo2""photo3" "photo4""photo5""photo6""photo7""photo8""photo9" "photo10""photo11""photo12";
+                grid-template-areas: "photo1""photo2""photo3""photo4""photo5""photo6""photo7""photo8""photo9""photo10""photo11""photo12";
                 margin: 30px auto;
 
                 .photo1,
@@ -47,6 +47,7 @@
                 h4 {
                     text-align: center;
                     margin-top: 8px;
+
                     &:hover {
                         color: #C6A5A8;
                         transition: 0.5s;
@@ -94,7 +95,7 @@
                 .photo10 {
                     grid-area: photo10;
                 }
-                
+
                 .photo11 {
                     grid-area: photo11;
                 }
@@ -199,7 +200,7 @@
                 .photo10 {
                     grid-area: photo10;
                 }
-                
+
                 .photo11 {
                     grid-area: photo11;
                 }
@@ -224,16 +225,17 @@
 
             .heading {
                 margin-bottom: 20px;
-            h1 {
-                text-align: center;
-                margin: 40px 0 20px 0;
-            }
 
-            h3 {
-                text-align: center;
-                margin-bottom: 20px;
+                h1 {
+                    text-align: center;
+                    margin: 40px 0 20px 0;
+                }
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
             }
-        }
 
             .photography-grid {
                 display: grid;
@@ -241,7 +243,7 @@
                 grid-template-rows: repeat(6, 256px);
                 grid-gap: 20px;
                 grid-template-areas: "photo1 photo2""photo3 photo4""photo5 photo6"
-                "photo7 photo8""photo9 photo10""photo11 photo12";
+                    "photo7 photo8""photo9 photo10""photo11 photo12";
                 margin: 30px auto;
 
                 .photo1,
@@ -267,6 +269,7 @@
                     text-align: center;
                     margin-top: 8px;
                     font-size: 0.8rem;
+
                     &:hover {
                         color: #C6A5A8;
                         transition: 0.5s;
@@ -314,7 +317,7 @@
                 .photo10 {
                     grid-area: photo10;
                 }
-                
+
                 .photo11 {
                     grid-area: photo11;
                 }
@@ -340,24 +343,25 @@
 
             .heading {
                 margin-bottom: 20px;
+
                 h1 {
                     text-align: center;
                     margin: 40px 0 20px 0;
                 }
-    
+
                 h3 {
                     text-align: center;
                     margin-bottom: 20px;
                 }
             }
-           
+
 
             .photography-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 224px);
                 grid-template-rows: repeat(4, 167px);
                 grid-gap: 40px 20px;
-                grid-template-areas: "photo1 photo2 photo3" "photo4 photo5 photo6""photo7 photo8 photo9""photo10 photo11 photo12";
+                grid-template-areas: "photo1 photo2 photo3""photo4 photo5 photo6""photo7 photo8 photo9""photo10 photo11 photo12";
                 margin: 30px auto;
 
                 .photo1,
@@ -383,6 +387,7 @@
                     text-align: center;
                     margin-top: 5px;
                     font-size: 0.6rem;
+
                     &:hover {
                         color: #C6A5A8;
                         transition: 0.5s;
@@ -429,7 +434,7 @@
                 .photo10 {
                     grid-area: photo10;
                 }
-                
+
                 .photo11 {
                     grid-area: photo11;
                 }
@@ -456,24 +461,25 @@
 
             .heading {
                 margin-bottom: 20px;
+
                 h1 {
                     text-align: center;
                     margin: 20px 0;
                 }
-    
+
                 h3 {
                     text-align: center;
                     margin-bottom: 20px;
                 }
             }
-           
+
 
             .photography-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 281px);
                 grid-template-rows: repeat(4, 208px);
                 grid-gap: 40px 20px;
-                grid-template-areas: "photo1 photo2 photo3" "photo4 photo5 photo6""photo7 photo8 photo9""photo10 photo11 photo12";
+                grid-template-areas: "photo1 photo2 photo3""photo4 photo5 photo6""photo7 photo8 photo9""photo10 photo11 photo12";
                 margin: 0 auto;
 
                 .photo1,
@@ -487,7 +493,7 @@
                 .photo9,
                 .photo10,
                 .photo11,
-                .photo12  {
+                .photo12 {
                     overflow: hidden;
 
                     img {
@@ -499,6 +505,7 @@
                     text-align: center;
                     margin-top: 5px;
                     font-size: 0.6rem;
+
                     &:hover {
                         color: #C6A5A8;
                         transition: 0.5s;
@@ -545,13 +552,9 @@
                 .photo10 {
                     grid-area: photo10;
                 }
-                
+
                 .photo11 {
                     grid-area: photo11;
-                }
-
-                .photo12 {
-                    grid-area: photo12;
                 }
 
             }

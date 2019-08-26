@@ -21,12 +21,13 @@
         footer {
             grid-area: footer;
             padding-bottom: 20px;
+            display: flex;
         }
     }
 }
 
 /*==============MOBILE LANDSCAPE==============*/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px)  {
     body {
         width: 100%;
         height: 100vh;
@@ -48,6 +49,7 @@
         footer {
             grid-area: footer;
             padding-bottom: 40px;
+            display: flex;
         }
     }
 }
@@ -74,6 +76,8 @@
 
         footer {
             grid-area: footer;
+            padding-bottom: 40px;
+            display: flex;
         }
     }
 }
@@ -81,13 +85,14 @@
 /*==============TABLET LANDSCAPE==============*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     body {
-        width: 100vw;
+        width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 100%;
         grid-template-areas: "header main footer";
-        grid-gap: 0 20px;
+        grid-gap: 0;
+        margin: 30px auto;
         margin: 0 auto;
 
         header {
