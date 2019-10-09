@@ -416,7 +416,19 @@
 
                 .p1 {
                     grid-area: p1;
+                    position: relative
                 }
+
+                /*.prev-info {
+                    position: absolute;
+                    width: 244px;
+                    height: 163.317px;
+                    background: rgba(0,0,0,0.5);
+                    h4 {
+                        color: white;
+                        font-size: 14px;
+                    }
+                }*/
 
                 .p2 {
                     grid-area: p2;
