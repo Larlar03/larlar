@@ -411,4 +411,87 @@
 }
 
 /*=================DESKTOP HI-RES===================*/
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+    body {
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            justify-self: center;
+
+            .heading {
+                margin-bottom: 20px;
+                h1 {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+    
+                h3 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+           
+
+            .web-dev-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 281px);
+                grid-template-rows: repeat(2, 230px);
+                grid-gap: 40px 20px;
+                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6";
+                margin: 0 auto;
+
+                .dev1,
+                .dev2,
+                .dev3,
+                .dev4,
+                .dev5,
+                .dev6 {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h4 {
+                    text-align: center;
+                    margin-top: 5px;
+                    font-size: 0.6rem;
+                    &:hover {
+                        color: #C6A5A8;
+                        transition: 0.5s;
+                        text-decoration: none !important;
+                    }
+                }
+
+                .dev1 {
+                    grid-area: dev1;
+                }
+
+                .dev2 {
+                    grid-area: dev2;
+                }
+
+                .dev3 {
+                    grid-area: dev3;
+                }
+
+                .dev4 {
+                    grid-area: dev4;
+                }
+
+                .dev5 {
+                    grid-area: dev5;
+                }
+
+                .dev6 {
+                    grid-area: dev6;
+                }
+
+            }
+        }
+    }
+}
