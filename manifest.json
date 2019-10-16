@@ -1,10 +1,10 @@
 {
     "short_name": "Larlar",
-    "name": "Larlar Front-End Developer",
-    "description": "Portfolio for Lana Gordon, Front-End Developer. ",
+    "name": "Lana Gordon | Front-End Developer | Larlar",
+    "description": "Portfolio for Front-End Developer Lana Gordon.",
     "icons": [
         {
-          "src": "images/icons/icon-72x72.png",
+          "src": "img/icons/icon-72x72.png",
           "sizes": "72x72",
           "type": "image/png"
         },
@@ -44,9 +44,9 @@
           "type": "image/png"
         }
       ],
-    "start_url": "/home",
-    "background_color": "#AA076B",
+    "start_url": "/index",
+    "background_color": "#ea95bc",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#AA076B"
+    "theme_color": "#ea95bc"
   }
