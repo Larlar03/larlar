@@ -18,10 +18,11 @@
             }
 
             .web-dev-grid {
+                display: grid;
                 grid-template-columns: repeat(1, 100%);
-                grid-template-rows: repeat(6, 300px);
+                grid-template-rows: repeat(7, 300px);
                 grid-gap: 20px;
-                grid-template-areas: "dev1""dev2""dev3" "dev4""dev5""dev6";
+                grid-template-areas: "dev1""dev2""dev3" "dev4""dev5""dev6""dev7""dev8";
                 margin: 30px auto;
 
                 .dev1,
@@ -29,7 +30,8 @@
                 .dev3,
                 .dev4,
                 .dev5,
-                .dev6 {
+                .dev6,
+                .dev7 {
                     overflow: hidden;
 
                     img {
@@ -72,6 +74,9 @@
                     grid-area: dev6;
                 }
 
+                .dev7 {
+                    grid-area: dev7;
+                }
             }
         }
     }
@@ -99,9 +104,9 @@
             .web-dev-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 256px);
-                grid-template-rows: repeat(3, 203px);
+                grid-template-rows: repeat(4, 203px);
                 grid-gap: 20px;
-                grid-template-areas: "dev1 dev2""dev3 dev4""dev5 dev6";
+                grid-template-areas: "dev1 dev2""dev3 dev4""dev5 dev6""dev7 dev8";
                 margin: 30px auto;
 
                 .dev1,
@@ -109,7 +114,8 @@
                 .dev3,
                 .dev4,
                 .dev5,
-                .dev6 {
+                .dev6,
+                .dev7 {
                     overflow: hidden;
 
                     img {
@@ -151,6 +157,9 @@
                     grid-area: dev6;
                 }
 
+                .dev7 {
+                    grid-area: dev7;
+                }
             }
         }
     }
@@ -181,9 +190,9 @@
             .web-dev-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 335px);
-                grid-template-rows: repeat(3, 256px);
-                grid-gap: 20px;
-                grid-template-areas: "dev1 dev2""dev3 dev4""dev5 dev6";
+                grid-template-rows: repeat(4, 265px);
+                grid-gap: 30px;
+                grid-template-areas: "dev1 dev2""dev3 dev4""dev5 dev6""dev7 dev8";
                 margin: 30px auto;
 
                 .dev1,
@@ -191,7 +200,8 @@
                 .dev3,
                 .dev4,
                 .dev5,
-                .dev6 {
+                .dev6,
+                .dev7 {
                     overflow: hidden;
 
                     img {
@@ -234,6 +244,9 @@
                     grid-area: dev6;
                 }
 
+                .dev7 {
+                    grid-area: dev7;
+                }
             }
         }
     }
@@ -266,9 +279,9 @@
             .web-dev-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 224px);
-                grid-template-rows: repeat(2, 167px);
+                grid-template-rows: repeat(3, 175px);
                 grid-gap: 40px 20px;
-                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6";
+                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6" "dev7 dev8 dev9";
                 margin: 30px auto;
 
                 .dev1,
@@ -319,6 +332,9 @@
                     grid-area: dev6;
                 }
 
+                .dev7 {
+                    grid-area: dev7;
+                }
             }
         }
     }
@@ -352,9 +368,9 @@
             .web-dev-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 281px);
-                grid-template-rows: repeat(2, 230px);
+                grid-template-rows: repeat(3, 230px);
                 grid-gap: 40px 20px;
-                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6";
+                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6""dev7 dev8 dev9";
                 margin: 0 auto;
 
                 .dev1,
@@ -362,7 +378,8 @@
                 .dev3,
                 .dev4,
                 .dev5,
-                .dev6 {
+                .dev6,
+                .dev7 {
                     overflow: hidden;
 
                     img {
@@ -403,6 +420,10 @@
 
                 .dev6 {
                     grid-area: dev6;
+                }
+
+                .dev7 {
+                    grid-area: dev7;
                 }
 
             }
@@ -438,9 +459,9 @@
             .web-dev-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 281px);
-                grid-template-rows: repeat(2, 230px);
+                grid-template-rows: repeat(3, 230px);
                 grid-gap: 40px 20px;
-                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6";
+                grid-template-areas: "dev1 dev2 dev3" "dev4 dev5 dev6""dev7 dev8 dev9";
                 margin: 0 auto;
 
                 .dev1,
@@ -448,7 +469,8 @@
                 .dev3,
                 .dev4,
                 .dev5,
-                .dev6 {
+                .dev6,
+                .dev7 {
                     overflow: hidden;
 
                     img {
@@ -474,7 +496,7 @@
                 .dev2 {
                     grid-area: dev2;
                 }
-
+ 
                 .dev3 {
                     grid-area: dev3;
                 }
@@ -491,6 +513,9 @@
                     grid-area: dev6;
                 }
 
+                .dev7 {
+                    grid-area: dev7;
+                }
             }
         }
     }
